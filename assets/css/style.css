@@ -1,0 +1,87 @@
+:root {
+    --primary-color: rgb(42, 190, 146);
+    --primary-color-darker: #08576e;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: open sans, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+form input,
+form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: 0.3s ease-in-out;
+
+}
+
+form input:focus {
+    outline: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.buttona input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.buttona {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.buttona:hover {
+    background: var(--primary-color-darker);
+}
+
+.buttona:active {
+    background: #033ddd;
+}
+
+.error-text {
+    font-size: 12px;
+    color: red;
+}
